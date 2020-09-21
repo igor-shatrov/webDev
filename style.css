@@ -87,9 +87,13 @@
         li {
             list-style-type: none;
         }
+
+        a{
+            text-decoration: none;
+        }
         
         .button {
-            background: #009CC2;
+            background: #00AFDB;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -112,17 +116,24 @@
             align-items: center;
             padding-top: 47px;
         }
+        .underline{
+            text-decoration: underline;
+        }
         
-        .heder-content {
+        /* .header-content {
             width: 100%;
             max-width: 730px;
-        }
+        } */
         
         .header .button {
             height: 46px;
             width: 184px;
             border-radius: 0px;
             margin: 30px auto 183px auto;
+        }
+
+        .hover:hover{
+            background: #009CC2;
         }
         
         .header h1 {
@@ -184,17 +195,25 @@
         
         .second-section {
             background: #F5F6F7;
-        }
-        
-        .second-section .community {
-            width: 50%;
+            height: 504px;
             display: flex;
-            justify-content: center;
             align-items: center;
         }
         
+        .second-section .container{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
+
+        .second-section .community {
+            width: 45%;
+            display: flex;
+            justify-content: center;
+        }
+        
         .community-content {
-            max-width: 298px;
+            width: 298px;
             display: flex;
             flex-direction: column;
         }
@@ -204,5 +223,221 @@
         }
         
         .second-section .slider {
+            width: 55%;
+
+        }
+
+        .next-slide{
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 18px;
+            justify-content: center;
+        }
+
+        .next-slide p{
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .slides{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
+
+        .slides img{
+            margin: auto;
+        }
+
+        .third-section .container{
+            display: flex;
+            flex-direction: row;
+            max-width: 1062px;
+            height: 842px;
+        }
+
+        .third-section .implement{
+            max-width: 416px;
             width: 50%;
+            display: flex;
+            flex-direction: column;
+            margin: auto 0px;
+           
+        }
+        .third-section .img{
+            width: 50%;
+            margin:auto 0px;
+        }
+
+        .third-section h2{
+            margin-bottom: 20px;
+        }
+
+        .third-section p{
+            margin-bottom: 30px;
+        }
+
+        .third-section .button{
+            width: 180px;
+            height: 46px;
+        }
+
+        .fourth-section{
+            background: url("img/pexels-christina-morillo-1181675\ 1.png") center no-repeat;
+            background-size: cover;
+            overflow: hidden;
+            height: 598px;
+            display: flex;
+            align-items: center;
+        }
+
+        .h2-wrapper{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        .fourth-section form{
+            display: flex;
+            flex-direction: row;
+        }
+
+        .fourth-section input{
+            height: 46px;
+            width: 340px;
+            border: none;
+            padding-left: 24px;
+        }
+
+        .fourth-section .button{
+            height: 46px;
+            width: 66px;
+        }
+
+        .fifth-section{
+            background: #F5F6F7;
+            height: 468px;
+        }
+
+        .fifth-section .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 468px;
+        }
+
+        .fifth-section h2{
+            margin-bottom: 20px;
+        }
+
+        .fifth-section p{
+            margin-bottom: 30px;
+            max-width: 483px;
+            text-align: center;
+        }
+
+        .apps{
+            display: flex;
+            justify-content: space-between;
+            width: 406px;;
+        }
+
+        .apps .button{
+            height: 50px;
+            width: 128px;
+        }
+
+        .apps .button-icon{
+            height: 50px;
+            width: 60px;
+            background: #009CC2;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .apps-content{
+            display: flex;
+            
+        }
+
+        footer{
+            background: black;
+            color: white;
+            
+        }
+
+        .container-footer{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 184px;
+        }
+
+        .container-footer ul{
+            display: flex;
+            width: 236px;
+            justify-content: space-between;
+            opacity: 98%;
+        }
+
+        .container-footer p{
+            color:#818181;
+
+        }
+
+        @media screen and (max-width: 600px){
+            
+                .first-section .container{
+                    flex-direction: column;
+                }
+
+                .first-section .text-block{
+                    width: 100%;
+                }
+
+                .first-section .img-block{
+                    width: 100%;
+                }
+
+                .second-section .container{
+                    flex-direction: column;
+                }
+
+                .text-block-content h2{
+                    text-align: center;
+                }
+
+                .text-block-content p{
+                    margin-left: 10px;
+                    margin-right: 10px;
+                }
+
+                .community-content{
+                    width: 100%;
+                }
+
+                .third-section .container{
+                    flex-direction: column-reverse;
+                }
+
+                .fourth-section input{
+                    width: 70%;
+                    margin-left: auto;
+                }
+
+                .fourth-section .button{
+                    margin-right: auto;
+                }
+
+                .fourth-section h2{
+                    text-align: center;
+                }
+
+                .container-footer{
+                    flex-direction: column;
+                }
+            
         }
