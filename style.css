@@ -105,7 +105,7 @@
             width: 100%;
             min-height: 788px;
             background-color: black;
-            background: url(img/bg-image.png) center no-repeat;
+            background: url(assets/bg-image.png) center no-repeat;
             background-size: cover;
         }
         
@@ -283,7 +283,7 @@
         }
 
         .fourth-section{
-            background: url("img/pexels-christina-morillo-1181675\ 1.png") center no-repeat;
+            background: url("assets/pexels-christina-morillo-1181675\ 1.png") center no-repeat;
             background-size: cover;
             overflow: hidden;
             height: 598px;
